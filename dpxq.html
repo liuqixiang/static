@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="renderer" content="webkit"/>
+<meta name="force-rendering" content="webkit"/>
+<script>/*@cc_on window.location.href="http://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); @*/</script>
+<title></title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+<!--<div class="headerbox">
+  <div class="header">
+    <div class="headerL">
+      <a onclick="javascript:history.back(-1)" class="goback"><img src="images/goback.png" /></a>
+    </div>
+    <div class="headerC0">
+      <a href="seacher.html" style="display:block; width:100%; height:100%"></a>
+    </div>
+    <div class="headerR">
+      <a href="javascript:void()"><img src="images/dph.png" /></a>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
+<div class="hbox"></div>-->
+<div class="dpxqbox1">
+   <div class="dpxqbox1L">
+      <div class="dpimg"><img src="images2/dp1.png" /></div>
+      <div class="dptxt">
+        <p class="p1">微糖蛋糕</p>
+        <p class="p2">1189人收藏    好评率99.9%</p>
+      </div>
+   </div>
+   <div class="dpxqbox1R yincang">
+      <div class="scbox">
+        <img src="images/sc.png" />
+        <span>收藏</span>
+      </div>
+   </div>
+   <div class="clear"></div>
+</div>
+<div class="typedp">
+  <ul>
+    <li class="on">
+      <a href="dpxq.html">
+        <img src="images/dpic.png" />
+        <p class="p2">店铺首页</p>
+      </a>
+    </li>
+    <li>
+      <a href="sgdg.html">
+      <p class="p1">99</p>
+      <p class="p2">水果蛋糕</p>
+      </a>
+    </li>
+    <li>
+      <a href="cjdg.html">
+      <p class="p1">99</p>
+      <p class="p2">插件蛋糕</p>
+      </a>
+    </li>
+    <li>
+      <a href="td.html">
+      <p class="p1">99</p>
+      <p class="p2">甜点</p>
+      </a>
+    </li>
+  </ul>
+</div>
+<div class="clear"></div>
+<div class="dpsub">
+  <div class="dpdengji">
+  <ul>
+    <li>
+      <div class="v1">描述相符<span>5</span></div>
+      <div class="v2">高</div>
+    </li>
+    <li>
+      <div class="v1">质量满意<span>5</span></div>
+      <div class="v2">高</div>
+    </li>
+    <li>
+      <div class="v1">价格合理<span>5</span></div>
+      <div class="v2">高</div>
+    </li>
+  </ul>
+  </div>
+  <div class="dpsub1">
+    <div class="dpsubL">店铺地址<span>段村中心街4号（初中向东50米）</span></div>
+  </div>
+  <div class="dpsub1 borbot">
+    <div class="dpsubL">服务电话<span>18137907005（微信同号）</span></div>
+    <div class="dpsubR">
+      <img src="images/tel.png" />
+    </div>
+  </div>
+  <div class="dpsub1">
+    <div class="dpsubL">价格说明<span>6寸68元，8寸88元，10寸108元。详情请咨询店主</span></div>
+  </div>
+</div>
+<div class="kbox"></div>
+<div class="likebox">
+  <div class="likeTit">
+    <span class="red">店主强烈推荐</span>
+  </div>
+  <ul id="dztj">
+  </ul>
+</div>
+<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+<script >
+  var addDztj=function(){
+    var html="";
+    for (let i = 1;i < 30;i++) {
+      html+="<li>\n" +
+              "      <a href=\"javascript:void(0)\">\n" +
+              "      <img src=\"cake/dztj/"+i+".jpg\" class=\"proimg\"/>\n" +
+              "      <p class=\"tit\">店主推荐"+i+"</p>\n" +
+              "      <p class=\"price\">￥请咨询店主<span></span></p>\n" +
+              "      </a>\n" +
+              "    </li>";
+    }
+    $('#dztj').html(html);
+  }
+
+$(function () {
+  addDztj();
+  $('#dztj img').on('error',function () {
+    $(this).parents('li').addClass('yincang');
+  })
+})
+</script>
+</body>
+</html>

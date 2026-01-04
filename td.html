@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="renderer" content="webkit"/>
+<meta name="force-rendering" content="webkit"/>
+<script>/*@cc_on window.location.href="http://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); @*/</script>
+<title></title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+<div class="dpxqbox1">
+   <div class="dpxqbox1L">
+      <div class="dpimg"><img src="images/dp1.png" /></div>
+      <div class="dptxt">
+        <p class="p1">微糖蛋糕</p>
+        <p class="p2">1189人收藏    好评率99.9%</p>
+      </div>
+   </div>
+   <div class="dpxqbox1R yincang">
+      <div class="scbox">
+        <img src="images/sc.png" />
+        <span>收藏</span>
+      </div>
+   </div>
+   <div class="clear"></div>
+</div>
+<div class="typedp">
+  <ul>
+    <li>
+      <a href="dpxq.html">
+        <img src="images/dpic0.png" />
+        <p class="p2">店铺首页</p>
+      </a>
+    </li>
+    <li >
+      <a href="sgdg.html">
+      <p class="p1">99</p>
+      <p class="p2">水果蛋糕</p>
+      </a>
+    </li>
+    <li >
+      <a href="cjdg.html">
+      <p class="p1">99</p>
+      <p class="p2">插件蛋糕</p>
+      </a>
+    </li>
+    <li class="on">
+      <a href="td.html">
+      <p class="p1">99</p>
+      <p class="p2">甜点</p>
+      </a>
+    </li>
+  </ul>
+</div>
+<div class="clear"></div>
+<div class="kbox"></div>
+<div class="likebox">
+  <ul id="td">
+
+  </ul>
+</div>
+<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+<script >
+  var addTd=function(){
+    var html="";
+    for (let i = 1;i < 100;i++) {
+      html+="<li>\n" +
+              "      <a href=\"javascript:void(0)\">\n" +
+              "      <img src=\"cake/td/"+i+".jpg\" class=\"proimg\"/>\n" +
+              "      <p class=\"tit\">甜点"+i+"</p>\n" +
+              "      <p class=\"price\">￥请咨询店主<span></span></p>\n" +
+              "      </a>\n" +
+              "    </li>";
+    }
+    $('#td').html(html);
+  }
+
+  $(function () {
+      addTd();
+    $('#td img').on('error',function () {
+      $(this).parents('li').addClass('yincang');
+    })
+  })
+</script>
+</body>
+</html>
