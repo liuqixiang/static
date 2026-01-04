@@ -115,7 +115,7 @@
   var addDztj=function(){
     var html="";
     for (let i = 1;i < 30;i++) {
-      if(checkURL("cake/dztj/"+i+".jpg")){
+      if(!checkURL("cake/dztj/"+i+".jpg")){
         continue;
       }
       html+="<li>\n" +
@@ -131,9 +131,9 @@
 
 $(function () {
   addDztj();
-  $('#dztj img').on('error',function () {
+  /*$('#dztj img').on('error',function () {
     $(this).parents('li').addClass('yincang');
-  })
+  })*/
 })
 </script>
 </body>
