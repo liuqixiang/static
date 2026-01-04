@@ -1,3 +1,10 @@
+var count={
+    cjdg: 1,
+    sgdg: 1,
+    td: 1,
+    dztj: 4
+}
+
 function checkURL(url){
     return $.ajax({
         url: url,
