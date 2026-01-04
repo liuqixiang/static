@@ -115,16 +115,15 @@
   var addDztj=function(){
     var html="";
     for (let i = 1;i < 30;i++) {
-      if(!checkURL("cake/dztj/"+i+".jpg")){
-        continue;
+      if(checkURL("cake/dztj/"+i+".jpg")){
+        html+="<li>\n" +
+                "      <a href=\"javascript:void(0)\">\n" +
+                "      <img src=\"cake/dztj/"+i+".jpg\" class=\"proimg\"/>\n" +
+                "      <p class=\"tit\">店主推荐"+i+"</p>\n" +
+                "      <p class=\"price\">￥请咨询店主<span></span></p>\n" +
+                "      </a>\n" +
+                "    </li>";
       }
-      html+="<li>\n" +
-              "      <a href=\"javascript:void(0)\">\n" +
-              "      <img src=\"cake/dztj/"+i+".jpg\" class=\"proimg\"/>\n" +
-              "      <p class=\"tit\">店主推荐"+i+"</p>\n" +
-              "      <p class=\"price\">￥请咨询店主<span></span></p>\n" +
-              "      </a>\n" +
-              "    </li>";
     }
     $('#dztj').html(html);
   }
