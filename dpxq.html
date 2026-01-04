@@ -110,29 +110,27 @@
   </ul>
 </div>
 <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
-<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/util.js?t=time()"></script>
 <script >
   var addDztj=function(){
     var html="";
-    for (let i = 1;i < 30;i++) {
-      if(checkURL("cake/dztj/"+i+".jpg")){
-        html+="<li>\n" +
-                "      <a href=\"javascript:void(0)\">\n" +
-                "      <img src=\"cake/dztj/"+i+".jpg\" class=\"proimg\"/>\n" +
-                "      <p class=\"tit\">店主推荐"+i+"</p>\n" +
-                "      <p class=\"price\">￥请咨询店主<span></span></p>\n" +
-                "      </a>\n" +
-                "    </li>";
-      }
+    for (let i = 1;i < count.dztj;i++) {
+      html+="<li>\n" +
+              "      <a href=\"javascript:void(0)\">\n" +
+              "      <img src=\"cake/dztj/"+i+".jpg\" class=\"proimg\"/>\n" +
+              "      <p class=\"tit\">店主推荐"+i+"</p>\n" +
+              "      <p class=\"price\">￥请咨询店主<span></span></p>\n" +
+              "      </a>\n" +
+              "    </li>";
     }
     $('#dztj').html(html);
   }
 
 $(function () {
   addDztj();
-  /*$('#dztj img').on('error',function () {
+  $('#dztj img').on('error',function () {
     $(this).parents('li').addClass('yincang');
-  })*/
+  })
 })
 </script>
 </body>
